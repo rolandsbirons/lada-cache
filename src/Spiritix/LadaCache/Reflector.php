@@ -120,10 +120,8 @@ class Reflector
 
     /**
      * Get Table Names From Where Exists, Not Exists (whereHas/whereDoesnthave builder syntax)
-     *
-     * @param QueryBuilder $queryBuilder
      */
-    private function getTablesFromWhere(QueryBuilder $queryBuilder, &$tables) {
+    private function getTablesFromWhere($queryBuilder, &$tables) {
         if (!isset($queryBuilder->wheres)) {
             return;
         }
